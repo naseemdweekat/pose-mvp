@@ -1,0 +1,21 @@
+v8.18 Native Any Rig Clean
+
+Built from working v8.13 clean restore.
+
+Goal:
+- Any rigged FBX should use the native PoseMyArt controller system.
+- No HTML overlay.
+- No Blender bone renaming required.
+- No automatic TransformControls attach on load, to avoid updateMatrixWorld null loops.
+
+Changes:
+1. Add Custom Rig still reads bone names directly from the FBX.
+2. Custom rig model is not treated as animal/human; it is simply a rigged model.
+3. Custom rig native BoneControllers use visible sphere geometry and stronger render/material settings.
+4. selectObject falls back to mesh if hipsController is missing.
+5. Console log after loading: [PMA Any Rig Clean] controllers: X visible: Y hip: Z
+
+Upload / replace:
+- app/index.html
+- app/js/app.246eb90f.js
+- app/js/anime-base-engine-no-ui-v8-3.js

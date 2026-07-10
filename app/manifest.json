@@ -1,0 +1,13 @@
+{
+  "short_name": "PoseMy.Art",
+  "name": "PoseMy.Art Restored",
+  "icons": [
+    {"src":"assets/img/icon_192x192_with_background.png","type":"image/png","sizes":"192x192","purpose":"any"}
+  ],
+  "start_url": "./",
+  "background_color": "#a0a0a0",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#a0a0a0",
+  "description": "Recovered static build"
+}
